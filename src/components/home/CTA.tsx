@@ -1,18 +1,10 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import waveformBg from "@/assets/waveform-bg.jpg";
 
 export const CTA = () => {
   return (
     <section className="py-24 relative overflow-hidden">
-      <div 
-        className="absolute inset-0 opacity-10"
-        style={{
-          backgroundImage: `url(${waveformBg})`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
-        }}
-      />
+      <div className="absolute inset-0 bg-gradient-subtle opacity-30" />
       
       <div className="container relative">
         <div className="max-w-4xl mx-auto text-center space-y-8 bg-card/80 backdrop-blur-sm border border-border rounded-3xl p-12 shadow-lg">

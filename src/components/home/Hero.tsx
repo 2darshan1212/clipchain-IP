@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
-import heroImage from "@/assets/hero-podcast.jpg";
 
 export const Hero = () => {
   return (
@@ -52,11 +51,9 @@ export const Hero = () => {
 
           <div className="relative">
             <div className="absolute -inset-4 bg-gradient-warm opacity-20 blur-3xl rounded-full" />
-            <img 
-              src={heroImage} 
-              alt="Professional podcast studio" 
-              className="relative rounded-2xl shadow-lg w-full h-auto"
-            />
+            <div className="relative rounded-2xl shadow-lg w-full aspect-video bg-gradient-warm flex items-center justify-center">
+              <Sparkles className="h-24 w-24 text-white/30" />
+            </div>
           </div>
         </div>
       </div>
